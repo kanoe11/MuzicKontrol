@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+header {
+  padding: 80px 0 100px;
+}
+
+section {
+  padding: 150px 0;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.big-banner{
+  background-image: url('../img/rec.jpg');
+}
+
+.fronttext{
+  color: 	#877466;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 90px;
+}
+
+.info{
+    margin-right: 8px;
+    font-size: 22px;
+
+}
