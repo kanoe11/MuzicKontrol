@@ -29,3 +29,20 @@ section {
     font-size: 22px;
 
 }
+
+.createArticle{
+padding-top: 45px;
+}
+
+.btnPlus , .btndel {
+  margin-top: 22px;
+  margin-bottom: 11px;
+}
+
+.crud{
+  display: grid;
+}
+
+#formActiv {
+   visibility: hidden;
+}
