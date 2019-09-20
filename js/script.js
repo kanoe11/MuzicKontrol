@@ -1,8 +1,9 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  // Smooth scrolling using jQuery easing
+  // animation navigation ( navbar)
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    //quand je clique sur un lien  du navbar mais section de la page ex #services 
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -27,3 +28,8 @@
   });
 
 })(jQuery); // End of use strict
+
+//$(document).on('click', '#bcreateArtic"', function() {
+//  $('#formActiv').toggle();
+//});
+
