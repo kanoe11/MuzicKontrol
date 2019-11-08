@@ -49,9 +49,18 @@ padding-top: 45px;
 
 
 .fa-instagram{
-  color:#517fa4;
+  color:#e4405f;
 }
 
 .fa-facebook{
   color:#3b5998;
+}
+
+.fa-map-marker-alt{
+  color:#15aabf;
+}
+
+
+.mkservices:hover .card-img-top{
+  opacity: 0.2;
 }
