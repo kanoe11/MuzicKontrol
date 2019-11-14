@@ -64,7 +64,7 @@ header {
   background-image: url('../img/rec.jpg');
 }*/
 
-.navbar{
+.navbar .navbar-expand-lg {
   color:whitesmoke;
 }
 
