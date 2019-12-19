@@ -101,3 +101,38 @@ margin-left: 1em;
 section {
   padding: 150px 0;
 }
+
+div.card-body{
+
+}
+.card{
+  background: none;
+  background-color: rgb(52,58,64);
+  opacity: 0.7;
+}
+
+.card-title{
+  font-family: "Hind",sans-serif, monospace;
+  color:white;
+
+  ;
+  opacity: 1;
+  margin: 10px;
+}
+
+.card-text{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(255,255,255, 0.9);
+
+
+  opacity: 1;
+}
+
+.services{
+  background:rgba(56,56,56, 0.8);
+  color: white;
+  opacity: 0.8;
+}
+h5 {
+  margin-bottom: 3%;
+}
