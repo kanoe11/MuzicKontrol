@@ -54,6 +54,15 @@ margin-left: 1em;
 
 }
 
+.services  {
+  width: 100%;
+  height: 180px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.services h5 {
+   text-align: center;
+}
 .slide{
   margin-right: 21px;
 }
