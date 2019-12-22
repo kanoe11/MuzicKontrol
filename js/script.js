@@ -35,29 +35,38 @@ function init() {
 
   var services = [
   {
+   image :'<i class="fas fa-euro-sign fa-2x"></i>',
    title: "Paiement 3X sans frais",
    description : "Votre magasin vous offre la possibilité de régler vos achats en 3X sans frais a partir de 150€ à l'aide d'un RIB et d'une piece d'identité."
   },
   {
+    image :'<i class="fas fa-volume-up fa-2x"></i>',
     title : "Installation de systèmes de sonorisation",
     description: "Installation de systèmes pour magasin ,restaurant ,Bar. La sonorisation de restaurant ou de bar répond à des besoins bien spécifiques. L'enjeu est d'obtenir une sono capable de diffuser de la musique d'ambiance de façon agréable, avec un son parfait et un volume égal,homogène dans tout le restaurant, après étude et devis a la clés ,Music kontrol propose des solutions simple et bon marché."
   },
   {
+    image : '<i class="fas fa-shipping-fast fa-2x"></i>',
     title: "Livraison",
     description : "Votre A partir de 2OO€ ,après conseil en magasin les produits choisi ou sélectionné par vos soins sur catalogue peuvent être livré a votre domicile gratuitement. vous offre la possibilité de régler vos achats en 3X sans frais a partir de 150€ à l'aide d'un RIB et d'une piece d'identité."
    },
    {
+    image :'<i class="far fa-handshake fa-2x"></i>',
     title: "Location son et lumière",
     description : "Votre A Un anniversaire ,un mariage,un événement ou le son et la lumière est essentiel. Music kontrol est present pour vos événements avec des systèmes professionnel et simple d'utilisation a des prix attractif. de 2OO€ ,après conseil en magasin les produits choisi ou sélectionné par vos soins sur catalogue peuvent être livré a votre domicile gratuitement. vous offre la possibilité de régler vos achats en 3X sans frais a partir de 150€ à l'aide d'un RIB et d'une piece d'identité."
    },
    {
+    image: '<i class="fas fa-tools fa-2x"></i>',
     title: "Location Reparations et nettoyage platine mk2 et lumière",
     description : "Problème avec une vieille platine Technics mk2,changement de la masse, de cable RCA ,nettoyage complet de votre platine. A Un anniversaire ,un mariage,un événement ou le son et la lumière est essentiel. Music kontrol est present pour vos événements avec des systèmes professionnel et simple d'utilisation a des prix attractif. de 2OO€ ,après conseil en magasin les produits choisi ou sélectionné par vos soins sur catalogue peuvent être livré a votre domicile gratuitement. vous offre la possibilité de régler vos achats en 3X sans frais a partir de 150€ à l'aide d'un RIB et d'une piece d'identité."
    },
 ];
 
 for (let i=0; i<services.length; i+=1) {
-  let content = ' <div class="col-md-4 mt-4"><div class="card"><div class="card-body "><h5 class="card-title">'+ services[i].title+'</h5>'+'<div class="card-text">'+services[i].description+'</div></div></div></div>';
+  let image = '';
+  if(services[i].image !== undefined && services[i].image !== '' ) {
+    image = '<div class="text-center mt-4">'+ services[i].image + '</div>';
+  }
+  let content = ' <div class="col-md-4 mt-4"><div class="card transition">'+ image +'<div class="card-body "><h5 class="card-title">| '+ services[i].title+' |</h5>'+'<div class="card-text">'+services[i].description+'</div></div></div></div>';
   $('.services').append(content);
  }
 }
