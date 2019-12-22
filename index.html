@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Muzikcontrol</title>
     <script src="libraries/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="libraries/jquery-easing/jquery.easing.min.js"></script>
 
     <script src="js/script.js"></script>
     <script src="js/carousel.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="libraries/fontawesome/css/all.css" rel="stylesheet">
@@ -57,12 +59,12 @@
 
     <div class="container">
         <div class="row justify-content-center">
-          <h1 class="m-5">Services</h1>
+          <h1 id="services" class="m-5">Services</h1>
           <div class="services row"></div>
         </div>
         <div class="row justify-content-center">
           <div class="col xl-12">
-            <h1 id="partenaires" class="justify-content-center m-5">Partenaire</h1>
+            <h1 id="partenaires" class="justify-content-center m-5">Partenaires</h1>
           </div>
           <div class="col xl-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -100,7 +102,7 @@
           <div class="container">
             <div class="row>">
               <div class="col-md-4">
-                <div class="contact">
+                <div id="contact" class="contact">
                   <h2>Contact</h2>
                   <div class="d-flex flex-row">
                     <div class="p-2"><p><i class="fas fa-map-marker-alt fa-2x"></i></p></div>
@@ -110,8 +112,8 @@
                   </div>
                  
                   <div class="d-flex flex-row">
-                    <div class="p-2"> <p><i class="fa fa-phone fa-2x"></i></p></a></div>
-                    <div class="p-2"></div>+33 3 54 16 24 51 </div>
+                    <div class="p-2"> <p><i class="fa fa-phone fa-2x"></i></p></div>
+                    <div class="p-2"></div><a href="tel:+33354162451">+33 3 54 16 24 51 </a></div>
                   </div>
                   <div class="d-flex flex-row">
                     <div class="p-2"> <p><i class="fab fa-instagram fa-2x"></i></p></div>
@@ -129,14 +131,7 @@
                   
                 </div>
               </div>
-              <h4  class="text-white text-center">Partenaires</h4>
-              <div  class="partenaires">
-                <div class="slide "><img src="img/akai.png" class="mr-4" width="100"></div>
-                <div class="slide"><img src="img/Cubase_logo.svg.png" class="mr-4" width="100"></div>
-                <div class="slide"><img src="img/marshall.png" class="mr-4" width="100" height="100"></div>
-                <div class="slide"><img src="img/vox.png" class="mr-4" width="100" height="100"></div>
-        
-              </div>
+
               <div class="target text-white text-center mt-4">
                 <h2>A propos de nous </h2>
                 <p class="lead">Magasin de musique électronique</p>
