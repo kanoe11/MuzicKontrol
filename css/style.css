@@ -110,6 +110,11 @@ margin-left: 1em;
   margin: 50px;
 }
 
+.d-block w-100{
+  width: 40%; 
+  height: 40%; 
+   object-fit: contain; 
+}
 
 .partenaires {
   display: flex;
@@ -119,9 +124,6 @@ section {
   padding: 150px 0;
 }
 
-div.card-body{
-
-}
 .card{
   background: none;
   background-color: rgb(52,58,64);
@@ -130,9 +132,7 @@ div.card-body{
 
 .card-title{
   font-family: "Hind",sans-serif, monospace;
-  color:white;
-
-  ;
+  color:white; 
   opacity: 1;
   margin: 10px;
 }
@@ -140,11 +140,13 @@ div.card-body{
 .card-text{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgba(255,255,255, 0.9);
-
-
   opacity: 1;
 }
 
+.partenaires text-center m-5{
+  text-align: center;
+  width: 100%;
+}
 
 h5 {
   margin-bottom: 3%;
