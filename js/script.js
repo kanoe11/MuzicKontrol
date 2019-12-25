@@ -63,10 +63,48 @@ function init() {
 
 for (let i=0; i<services.length; i+=1) {
   let image = '';
+  var contenu =  services[i].description;
   if(services[i].image !== undefined && services[i].image !== '' ) {
     image = '<div class="text-center mt-4">'+ services[i].image + '</div>';
   }
-  let content = ' <div class="col-md-4 mt-4"><div class="card transition">'+ image +'<div class="card-body "><h5 class="card-title">| '+ services[i].title+' |</h5>'+'<div class="card-text">'+services[i].description+'</div></div></div></div>';
+  if (services[i].description.length > services[0].description.length ){
+    var desc =  services[i].description;
+    var element =  desc.substring(0,services[0].description.length); 
+    contenu = element;
+
+ }
+  let content = ' <div class="col-md-4 mt-4"><div class="card transition">'+ image +'<div class="card-body "><h5 class="card-title">| '+ services[i].title+' |</h5>'+'<div class="card-text">'+contenu+'</div></div></div></div>';
+   
   $('.services').append(content);
+  $('tooltip').append(content);
+ }
+}
+
+function initprod() {
+
+  var produits = [
+  {
+   image :'img/mixer.jpg',
+   title: "Dj"
+  },
+  {
+    image :'img/carrteson.png',
+    title : "Carte son",
+  },
+  {
+    image : 'img/808.jpg',
+    title: "boite à rhytme",
+   }
+];
+
+for (let i=0; i<produits.length; i+=1) {
+  let image = '';
+  if(produits[i].image !== undefined && produits[i].image !== '' ) {
+    image = '<div class="text-center mt-4">'+ produits[i].image + '</div>';
+  }
+  
+  let content = ' <div class="col-md-4 mt-4"><div class="card transition">'+ image +'<div class="card-body "><h5 class="card-title">| '+ produits[i].title+' |</h5>'+'<div class="card-text">'+'</div></div></div></div>';
+   
+  $('.Produits').append(content);
  }
 }
