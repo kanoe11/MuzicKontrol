@@ -76,7 +76,7 @@ for (let i=0; i<services.length; i+=1) {
   let content = ' <div class="col-md-4 mt-4"><div class="card transition">'+ image +'<div class="card-body "><h5 class="card-title">| '+ services[i].title+' |</h5>'+'<div class="card-text">'+contenu+'</div></div></div></div>';
    
   $('.services').append(content);
-  $('tooltip').append(content);
+  //$('tooltip').append(content);
  }
 }
 
