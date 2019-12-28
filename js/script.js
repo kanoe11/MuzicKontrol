@@ -1,6 +1,7 @@
 
 $( document ).ready(function() {
   init();
+  getimages();
   (function($) {
     "use strict"; // Start of use strict
   
@@ -80,31 +81,21 @@ for (let i=0; i<services.length; i+=1) {
  }
 }
 
-function initprod() {
-
-  var produits = [
-  {
-   image :'img/mixer.jpg',
-   title: "Dj"
-  },
-  {
-    image :'img/carrteson.png',
-    title : "Carte son",
-  },
-  {
-    image : 'img/808.jpg',
-    title: "boite à rhytme",
-   }
-];
-
-for (let i=0; i<produits.length; i+=1) {
-  let image = '';
-  if(produits[i].image !== undefined && produits[i].image !== '' ) {
-    image = '<div class="text-center mt-4">'+ produits[i].image + '</div>';
-  }
-  
-  let content = ' <div class="col-md-4 mt-4"><div class="card transition">'+ image +'<div class="card-body "><h5 class="card-title">| '+ produits[i].title+' |</h5>'+'<div class="card-text">'+'</div></div></div></div>';
-   
-  $('.Produits').append(content);
- }
-}
+function getimages(){
+  $.ajax({
+      url:'files.php',
+      type: 'POST',
+      success: function (data){  
+        var tab =  JSON.parse(data);
+        for (let i=0; i<tab.length; i+=1) {
+          let image = '';
+          image = '<img class="partenairesImg" src="'+tab[i]+'" />';
+          let content = ' <div class="col-md-4 mt-4">'+image+'</div>';     
+          $('.partenaire').append(content);
+          }
+    },
+    error: function(resultat,statut){
+      alert('erreur non envoyer');
+    }
+  })
+};
