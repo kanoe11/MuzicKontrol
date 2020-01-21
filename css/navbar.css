@@ -1,0 +1,21 @@
+.navMenu {
+    background-color:#17181E;
+}
+
+.navMenu .nav-link:hover{
+    color: #909691;
+}
+
+.navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .navbar-nav > li{
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  .navbar-nav>li{
+    border-right: 1px solid #F9F9FD;
+  }
