@@ -7,10 +7,19 @@ a {
   color: white;
 }
 
+.body {
+  overflow-x: hidden;
+}
+
 .btnPlus , .btndel {
   margin-top: 22px;
   margin-bottom: 11px;
 }
+
+.carousel-inner{
+  margin: 0!important;
+}
+
 .contact a p i {
 margin-left: 1em;
 }
@@ -23,12 +32,15 @@ margin-left: 1em;
   display: grid;
 }
 
-  
+
 
 #formActiv {
   visibility: hidden;
 }
 
+.footerMenu{
+  background-color:#0A090C;
+}
 
 .fa-instagram{
  color:#e4405f;
@@ -81,9 +93,7 @@ margin-left: 1em;
 .services h5 {
    text-align: center;
 }
-.services .card {
 
-}
 
 .slide{
   margin-right: 21px;
