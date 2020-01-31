@@ -19,6 +19,12 @@ a {
 .carousel-inner{
   margin: 0!important;
 }
+#carouselExampleIndicators {
+  max-width: 1980px;
+  max-height: 708px;
+  overflow: hidden;
+  margin: auto;
+}
 
 .contact a p i {
 margin-left: 1em;
