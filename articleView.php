@@ -46,3 +46,5 @@
                     ?>
               </table>
             </div>
+            <script src="/muzickontrol/libraries/jquery/jquery.min.js"></script>
+            <script src="/muzickontrol/js/article.js"></script>

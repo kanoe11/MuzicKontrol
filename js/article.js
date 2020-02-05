@@ -29,7 +29,7 @@ $(document).ready(function () {
         var id = $(this).attr("data-id");
 
         $.ajax({
-            url: '/musickontrol/template/article/supprimer.php',
+            url: '/muzickontrol/template/article/supprimer.php',
             type: 'GET',
             data: {
                 del: id
