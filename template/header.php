@@ -20,10 +20,11 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="/article/css/bootstrap/css/custom.css">
     <!-- js-->
-    <script src="/article/js/jquery/jquery.min.js"></script>
+    <script src="/muzickontrol/libraries/jquery/jquery.min.js"></script>
     <script src="/article/css/bootstrap/js/bootstrap.bundle.min.js"></script>
     
     <script src="/article/js/script.js"></script>
+    <script src="/muzickontrol/js/article.js"></script>
   </head>
   <body>
         <header class="header">

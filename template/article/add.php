@@ -38,7 +38,6 @@
                     <select name ='type_article'>
                     <?php
                     $config = new Config();
-                    var_dump($config);
                     $result = $config->config->query(" select * from type_article ");
                     $data = $result->fetch_all(MYSQLI_ASSOC);
 
@@ -51,6 +50,12 @@
                         <div class="input-group">
                         <textarea name="contenu" id="contenu" class="md-textarea form-control" rows="3" class="form-control" required></textarea> 
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="visible" name="visible">
+                            <option value="0"> brouillon </option>
+                            <option value="1"> visible </option>
+                        </select>
                     </div>
                     <div class="row">
                         <div class="col-sm-8">

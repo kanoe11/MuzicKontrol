@@ -2,6 +2,7 @@
     $config = new Config();
     $mysqli = $config->config;
  ?>
+ <button><a href="template/article/add.php">ajouter</a></button>
 <div class="table-responsive">      
               <table class="table condensed"> 
                 <thead>  
@@ -18,9 +19,8 @@
                     if(isset($_GET['beginPage'])) {
                       $beginPage = $_GET['beginPage'] * $offset ;
                     } */
-
-                    $result = $mysqli->query("SELECT * FROM type_article INNER JOIN article ON type_article.id= article.type_article_id
-                    where nom = 'article'");
+                    // AFFICHAGE !!!
+                    $result = $mysqli->query("SELECT * FROM article where visible = 1");
                     $data = $result->fetch_all(MYSQLI_ASSOC);
                     
                     for ( $i = 0 ; $i < count($data); $i++ ) { 
