@@ -51,7 +51,7 @@ $(document).ready(function () {
         var titre = $("#titre").val();
         var contenu = $("#contenu").val();
         var id = $('input[name="id"]').val();
-
+        
         $.ajax({
             url: '/muzickontrol/process.php',
             type: 'POST',
@@ -62,7 +62,7 @@ $(document).ready(function () {
                 update: ''
             },
             success: function (data) {
-                $(location).attr('href', '/article/index.php');
+                document.location.href = "/muzickontrol/articleView.php";
             },
             error: function (resultat, statut) {
                 alert('erreur non envoyer');

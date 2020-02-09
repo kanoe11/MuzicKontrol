@@ -27,9 +27,9 @@ class User
         $q = $this->_db->prepare('INSERT INTO personnages(nom, forcePerso, degats, niveau, experience) VALUES(:nom, :forcePerso, :degats, :niveau, :experience)');
     }
 
-    public function update($article ,$titre,$_contenu) {
+   /* public function update($article ,$titre,$_contenu) {
         $this->_db->exec('UPDATE $article SET titre= $titre ,contenu='".$resultat."' WHERE id=".$id');
-    }
+    }*/
 
     public function delete($id) {
         $this->_db->exec('DELETE * FROM Article');
