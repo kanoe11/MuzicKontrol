@@ -27,7 +27,7 @@ class Article
 
     public function update() {
 
-       $q = $this->_db->prepare('UPDATE article SET titre= "'.$this->_titre.'",contenu="'.$this->_contenu.'" WHERE id='.$this->_id);
+       $q = $this->_db->prepare('UPDATE article SET titre= "'.$this->_titre.'",contenu="'.$this->_contenu.'", type_article_id="'.$this->_type_article_id.'" WHERE id='.$this->_id);
        $result = $q->execute();
        if( $result){
             return true;
