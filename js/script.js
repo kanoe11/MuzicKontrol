@@ -4,7 +4,6 @@ $( document ).ready(function() {
   getimages();
   (function($) {
     "use strict"; // Start of use strict
-  
     // animation navigation ( navbar)
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       //quand je clique sur un lien  du navbar mais section de la page ex #services 
