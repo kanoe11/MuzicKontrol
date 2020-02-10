@@ -41,15 +41,19 @@ class Article
 
     
     public function view($id) {
-        $update = false;
-        $titre = '';
-        $contenu = '';
         $result =  $this->_db->query("SELECT * FROM article WHERE id = ". $id);
         $data = $result->fetch_array();
         $this->setId($data['id']);
         $this->setTitre($data['titre']);
         $this->setContenu($data['contenu']);
+        return $data;
+    }
 
+    public function getAll(){
+        $result =  $this->_db->query("SELECT * FROM article ");
+        $data = $result->fetch_array();
+
+        return $data;
     }
 
 
