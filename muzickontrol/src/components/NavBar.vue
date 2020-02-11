@@ -12,7 +12,7 @@
             <router-link to="/service" class="nav-link js-scroll-trigger"> Services</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+             <router-link to="/contact" class="nav-link js-scroll-trigger">Contact</router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#evenements">Evénement</a>

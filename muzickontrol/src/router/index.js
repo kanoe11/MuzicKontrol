@@ -5,6 +5,7 @@ import Article from '@/components/Article/Article'
 import Liste from '@/components/Article/ListeArticle'
 import VoirArticle from '@/components/Article/VoirArticle'
 import Service from '@/components/Service'
+import Contact from '@/components/Contact'
 
 Vue.use(Router)
 
@@ -34,6 +35,12 @@ export default new Router({
       path: '/article/voir/:id',
       name: 'article_voir',
       component: VoirArticle
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
     }
+
   ]
 })

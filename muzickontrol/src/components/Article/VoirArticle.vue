@@ -9,7 +9,7 @@
 export default {
     data() {
         return {
-            article: JSON.parse('[{"id":"1","titre":"test","user_id":"0","contenu":"","type_article_id":"1"},{"id":"2","titre":"test","user_id":"0","contenu":"sdfsdfsdfsdf","type_article_id":"1"},{"id":"3","titre":"sqqsdqsd","user_id":"0","contenu":"qsdqsdqsdqsdsqdqsqsqssqsqsqsq","type_article_id":"2"},{"id":"4","titre":"test","user_id":"0","contenu":"x xxx","type_article_id":"1"}]')[$this.$route.params.id]
+            article: JSON.parse('[{"id":"1","titre":"test","user_id":"0","contenu":"","type_article_id":"1"},{"id":"2","titre":"test","user_id":"0","contenu":"sdfsdfsdfsdf","type_article_id":"1"},{"id":"3","titre":"sqqsdqsd","user_id":"0","contenu":"qsdqsdqsdqsdsqdqsqsqssqsqsqsq","type_article_id":"2"},{"id":"4","titre":"test","user_id":"0","contenu":"x xxx","type_article_id":"1"}]')
         }
     }
 }
