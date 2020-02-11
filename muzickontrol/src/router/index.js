@@ -4,6 +4,7 @@ import NavBar from '@/components/NavBar'
 import Article from '@/components/Article/Article'
 import Liste from '@/components/Article/ListeArticle'
 import Service from '@/components/Service'
+import Contact from '@/components/Contact'
 
 Vue.use(Router)
 
@@ -28,6 +29,12 @@ export default new Router({
       path: '/article/ajout',
       name: 'article_ajout',
       component: Article
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
     }
+
   ]
 })

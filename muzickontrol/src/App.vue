@@ -19,6 +19,7 @@ export default {
 </script>
 <style>
 @import '../../libraries/bootstrap/css/bootstrap.min.css';
+@import '../../libraries/fontawesome/css/all.css';
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
