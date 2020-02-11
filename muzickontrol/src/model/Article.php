@@ -51,7 +51,7 @@ class Article
 
     public function getAll(){
         $result =  $this->_db->query("SELECT * FROM article ");
-        $data = $result->fetch_array();
+        $data = $result->fetch_all(MYSQLI_ASSOC);
 
         return $data;
     }
