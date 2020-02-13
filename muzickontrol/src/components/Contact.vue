@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row>">
         <div class="col-md-4">
-          <div id="contact" class="contact">
+          <div id="contact" class="contact text-center">
             <h1 class="text-white m-3">Contact</h1>
             <hr class="w-100" />
             <div class="d-flex flex-row">
