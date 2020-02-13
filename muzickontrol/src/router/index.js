@@ -6,6 +6,7 @@ import Liste from '@/components/Article/ListeArticle'
 import VoirArticle from '@/components/Article/VoirArticle'
 import Service from '@/components/Service'
 import Contact from '@/components/Contact'
+import Partenaires from '@/components/Partenaires'
 
 Vue.use(Router)
 
@@ -40,7 +41,11 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/partenaires',
+      name: 'partenaires',
+      component: Partenaires
     }
-
   ]
 })

@@ -136,9 +136,7 @@ margin-left: 1em;
    object-fit: contain; 
 }
 
-.partenaires {
-  display: flex;
-}
+
 
 section {
   padding: 150px 0;
@@ -164,15 +162,6 @@ section {
   opacity: 1;
 }
 
-.partenaires text-center m-5{
-  text-align: center;
-  width: 100%;
-}
-
-.partenairesImg {
-  width: 200px;
-  height:150px;
-}
 
 h5 {
   margin-bottom: 3%;

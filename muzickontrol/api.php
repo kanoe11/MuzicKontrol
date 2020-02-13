@@ -11,3 +11,16 @@ fclose($fp);
     echo json_encode(array($result));
     http_response_code(200);
 }
+
+
+
+if(isset($_GET['partenaires'])) {
+    $dir = "../img/logoIcons/*.jpg";
+    $images = glob( $dir );
+    var_dump($images);
+    $fp = fopen('images.json', 'w');
+    fwrite($fp, json_encode($images));
+    fclose($fp);
+    echo json_encode(array($images));
+    http_response_code(200);
+}
