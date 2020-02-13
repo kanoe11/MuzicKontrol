@@ -29,4 +29,12 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+a {
+  color: white;
+}
+
+hr {
+  border-bottom: 1px solid rgb(68, 67, 70);
+}
 </style>
