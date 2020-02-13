@@ -1,7 +1,7 @@
 <template>
       <nav class="navbar navMenu navbar-expand-lg navbar-white  fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" src="img/logo.jpg" alt="logo"></a>
+      <router-link to="/home" class="nav-link js-scroll-trigger"><img class="logo" src="img/logo.jpg" alt="logo"></router-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,6 +36,13 @@ export default {
 }
 </script>
 <style scoped>
+#mainNav {
+  font-family: fantasy;
+  font-size: 20px;
+}
+  .navbar .navbar-expand-lg {
+    color:whitesmoke;
+}
 .navMenu {
     background-color:#0A090C;
 }
@@ -57,4 +64,5 @@ export default {
   .navbar-nav>li{
     border-right: 1px solid #F9F9FD;
   }
+
 </style>

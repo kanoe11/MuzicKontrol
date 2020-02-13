@@ -45,18 +45,17 @@
   </section>
 </template>
 <script>
-import axios from "axios"
+import axios from 'axios'
 export default {
-    data() {
-        return {
-            typeArticle: []
-        };
-    },
-    mounted() {
-      axios.get("https://jsonplaceholder.typicode.com/todos/").then(response =>
-      {
-          this.typeArticle = [...response.data].slice(0.10)
-      })
+  data () {
+    return {
+      typeArticle: []
+    }
+  },
+  mounted () {
+    axios.get('https://jsonplaceholder.typicode.com/todos/').then(response => {
+      this.typeArticle = [...response.data].slice(0.10)
+    })
   }
 }
 

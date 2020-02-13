@@ -46,11 +46,10 @@
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style scoped>
-
 
 .contact a p i {
 margin-left: 1em;
@@ -77,6 +76,5 @@ margin-left: 1em;
   font-family: 'Permanent Marker', cursive;
   font-size: 90px;
 }
-
 
 </style>
