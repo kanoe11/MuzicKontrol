@@ -18,7 +18,6 @@ if(isset($_GET['all'])) {
 if(isset($_GET['partenaires'])) {
     $dir = "../img/logoIcons/*.jpg";
     $images = glob( $dir );
-    var_dump($images);
     $fp = fopen('images.json', 'w');
     fwrite($fp, json_encode($images));
     fclose($fp);
