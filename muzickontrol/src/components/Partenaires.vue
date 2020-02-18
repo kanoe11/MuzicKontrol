@@ -14,7 +14,7 @@
     export default {
         data() {
             return {
-                images: JSON.parse('["Denon Dj.jpg","akai.jpg","artura.jpg","beyerdynamic.jpg","electrovoice.jpg","korg.jpg","mackie.jpg","maudio.jpg","modalElectronics.jpg","moog.jpg","novation.jpg","numark.jpg","ortofon.jpg","presonus.jpg","prodige.jpg","rane.jpg","reloop.jpg","roland.jpg","shure.jpg","udg.jpg","xone.jpg"]')
+                images: JSON.parse('["Denon Dj.jpg","akai.jpg","artura.jpg","electrovoice.jpg","korg.jpg","mackie.jpg","maudio.jpg","modalElectronics.jpg","moog.jpg","novation.jpg","numark.jpg","ortofon.jpg","presonus.jpg","prodige.jpg","rane.jpg","reloop.jpg","roland.jpg","shure.jpg","udg.jpg","xone.jpg"]')
             }
         }
     }
