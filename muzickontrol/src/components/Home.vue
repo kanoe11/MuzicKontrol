@@ -14,7 +14,7 @@ export default {
   components: {
     'Service': Service,
     'Contact': Contact,
-    'Slider': Slider,
+    'Slider': Slider
   }
 }
 </script>

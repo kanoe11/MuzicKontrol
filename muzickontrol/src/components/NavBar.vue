@@ -65,4 +65,8 @@ export default {
     border-right: 1px solid #F9F9FD;
   }
 
+  a {
+  color: white;
+}
+
 </style>

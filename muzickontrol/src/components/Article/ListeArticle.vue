@@ -15,7 +15,10 @@
                 <td> {{article.titre}} </td>
                 <td> {{article.contenu}} </td>
                 <td> {{article.visible}} </td>
-                <td><router-link v-bind:to="'/article/voir/' + article.id">éditer </router-link> </td>
+                <td>
+                    <router-link v-bind:to="'/article/voir/' + article.id">voir </router-link> 
+                    <router-link v-bind:to="'/article/ajout/' + article.id">éditer </router-link> 
+                    </td>
             </tr>
         </tbody>
     </table>

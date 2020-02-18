@@ -33,7 +33,7 @@ export default new Router({
       component: Liste
     },
     {
-      path: '/article/ajout',
+      path: '/article/ajout/:id',
       name: 'article_ajout',
       component: Article
     },

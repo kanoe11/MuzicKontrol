@@ -1,8 +1,7 @@
 <template>
 <div>
-    {{$route.params.id}}
-    <h2>{{article.titre}}</h2>
-    <div>{{article.contenu}}</div>
+    <h2>{{article[$route.params.id].titre}}</h2>
+    <div>{{article[$route.params.id].contenu}}</div>
 </div>
 </template>
 <script>
