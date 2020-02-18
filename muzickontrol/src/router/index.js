@@ -5,8 +5,9 @@ import Liste from '@/components/Article/ListeArticle'
 import VoirArticle from '@/components/Article/VoirArticle'
 import Service from '@/components/Service'
 import Contact from '@/components/Contact'
-import Home from '@/components/Home'
 import Slider from '@/components/Slider'
+import Home from '@/components/Home'
+import Partenaires from '@/components/Partenaires'
 
 Vue.use(Router)
 
@@ -48,10 +49,14 @@ export default new Router({
       component: Contact
     },
     {
+      path: '/partenaires',
+      name: 'partenaires',
+      component: Partenaires
+    },
+    {
       path: '/slider',
       name: 'slider',
       component: Slider
     }
-
   ]
 })

@@ -21,7 +21,7 @@
             <a class="nav-link js-scroll-trigger" href="#decouverte">Découverte</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#partenaires">Partenaires</a>
+            <router-link to="/partenaires" class="nav-link js-scroll-trigger">Partenaires</router-link>
           </li>
           <li class="nav-item">
              <router-link to="/article/" class="nav-link js-scroll-trigger">Article</router-link>

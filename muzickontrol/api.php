@@ -13,12 +13,27 @@ if(isset($_GET['all'])) {
     http_response_code(200);
 }
 
+
+
+if(isset($_GET['partenaires'])) {
+    $dir = "../img/logoIcons/*";
+    $images = glob( $dir );
+    $listImg = getName($images);
+
+    echo json_encode($listImg);
+    http_response_code(200);
+}
+
 if (isset($_GET['slider'])){
   $dir = "../img/slider/*.jpg";
   $images = glob( $dir );
+  echo json_encode(getName($images));
+}
+
+function getName(array $names) {
   $listImg = [];
-  foreach( $images as $i) {
+  foreach( $names as $i) {
     $listImg[] = basename($i);
   }
-  echo json_encode($listImg);
+  return($listImg);
 }
